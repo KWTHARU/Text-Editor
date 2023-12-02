@@ -5,3 +5,6 @@ document.getElementById('fontColorPicker').addEventListener('input', function() 
     var color = this.value;
     document.execCommand('foreColor', false, color);
 });
+function applyAlignment(align) {
+    document.getElementById('editor').style.textAlign = align;
+}
